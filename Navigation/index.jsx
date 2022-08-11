@@ -4,16 +4,16 @@ import { NavigationContainer } from "@react-navigation/native";
 import HomeScreen from "../screens/HomeScreen";
 import PlannerScreen from "../screens/PlannerScreen";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Onboarding from '../src/Authentication/Onboarding/Onboarding';
+import Home from '../src/Authentication/Onboarding/Home';
 
 const AuthenticationStack = createNativeStackNavigator()
 const AuthenticationNavigator = () => {
     return (
-        <AuthenticationStack.Navigator  >
+        <AuthenticationStack.Navigator>
             <AuthenticationStack.Screen options={{
                 headerShown: false
             }}
-                name="Onboarding" component={Onboarding} />
+                name="Home" component={Home} />
         </AuthenticationStack.Navigator>
     )
 }
@@ -25,9 +25,6 @@ export default function index() {
     return (
         <NavigationContainer>
             <AuthenticationNavigator />
-            {/* <Stack.Navigator>
-                <Stack.Screen name="root" component={BottomTabNaviagtor} />
-            </Stack.Navigator> */}
         </NavigationContainer>
     )
 }
