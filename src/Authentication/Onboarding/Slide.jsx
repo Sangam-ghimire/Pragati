@@ -1,39 +1,43 @@
-import { Dimensions, StyleSheet, Text, View } from 'react-native'
+import { Dimensions, Image, View, StyleSheet, Text } from 'react-native'
 import React from 'react'
 
-const { width, height } = Dimensions.get("window")
-
-const SLIDE_HEIGHT = 0.61 * height
-
-const Slide = (props) => {
-    const transform = [
-        { translateY: (SLIDE_HEIGHT - 100) / 2 },
-        { translateX: props.right ? (width / 2 - 50) : (-width / 2 + 50) },
-        { rotate: props.right ? "-90deg" : "90deg" }
-    ]
-
+const { width } = Dimensions.get('window')
+const COLORS = { primary: '#282534', white: '#fff' };
+export default function Slide({ item }) {
     return (
-        <View style={styles.container}>
-            <View style={[styles.titleContainer, { transform }]}>
-                <Text style={styles.title}>{props.label}</Text>
+        <View style={{ alignItems: 'center' }}>
+            <Image
+                source={item?.image}
+                style={{ height: '75%', width, resizeMode: 'contain' }}
+            />
+            <View>
+                <Text style={styles.title}>{item?.title}</Text>
+                <Text style={styles.subtitle}>{item?.subtitle}</Text>
             </View>
         </View>
     )
 }
 
-export default Slide
-
 const styles = StyleSheet.create({
-    container: {
-        width,
-    },
-    titleContainer: {
-        height: 100,
-        justifyContent: "center",
-    },
     title: {
-        fontSize: 80,
-        color: "white",
-        textAlign: "center"
-    }
+        color: COLORS.white,
+        fontSize: 22,
+        fontWeight: 'bold',
+        marginTop: 20,
+        textAlign: 'center',
+    },
+    subtitle: {
+        color: COLORS.white,
+        fontSize: 13,
+        marginTop: 10,
+        maxWidth: '70%',
+        textAlign: 'center',
+        lineHeight: 23,
+    },
+    image: {
+        height: '100%',
+        width: '100%',
+        resizeMode: 'contain',
+    },
 })
+
