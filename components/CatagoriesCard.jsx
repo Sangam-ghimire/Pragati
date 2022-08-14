@@ -6,7 +6,7 @@ function CatagoriesCard({ image, title }) {
     const navigation = useNavigation();
     return (
         <TouchableOpacity style={{ width: 150, margin: 10, shadowOffset: { width: 3, height: 2, }, shadowOpacity: 0.25, shadowRadius: 3.84, elevation: 10, shadowColor: 'grey' }} onPress={() => {
-            // navigation.navigate('CatageorySpecific',{ category:title })
+            navigation.navigate('CatageorySpecific', { category: title })
         }}>
             <Image source={{ uri: image }} style={{ height: 100, width: 150 }} />
             <View style={{ height: 40, width: 150 }}>

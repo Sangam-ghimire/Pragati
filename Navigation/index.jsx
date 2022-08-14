@@ -17,6 +17,8 @@ import AuthorProfileScreen from '../screens/AuthorProfileScreen';
 import CameraScreen from '../screens/CameraScreen';
 import PreferencesScreen from '../screens/PreferencesScreen';
 import Card from '../screens/Card';
+import CategorySpecific from '../screens/CategorySpecific';
+import CatagorieSection from '../screens/CatagorieSection';
 
 const AuthenticationStack = createNativeStackNavigator()
 const Drawer = createDrawerNavigator();
@@ -55,9 +57,8 @@ const AuthenticationNavigator = () => {
                 <Stack.Screen name="AuthorProfile" options={{ headerShown: false }} component={AuthorNavigator} />
                 <Stack.Screen name="Preferences" options={{ headerShown: false }} component={PreferencesScreen} />
                 <Stack.Screen name="Video" options={{ headerShown: false }} component={Card} />
-                {/* <Stack.Screen name="CatageorySpecific" options={{ headerShown: false }} component={Categor} />
-                <Stack.Screen name="CatagorieSection" options={{ headerShown: false }} component={Categor} /> */}
-
+                <Stack.Screen name="CatageorySpecific" options={{ headerShown: false }} component={CategorySpecific} />
+                <Stack.Screen name="CategorieSection" options={{ headerShown: false }} component={CatagorieSection} />
             </Stack.Navigator>
         </>)
 }

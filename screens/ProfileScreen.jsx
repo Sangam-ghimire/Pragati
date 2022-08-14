@@ -27,7 +27,7 @@ function ProfileScreen({ navigation }) {
                         <View  >
                             <Text style={{
                                 fontSize: 30
-                            }}>Hello Raj Karki</Text>
+                            }}> Ronit Karki</Text>
                             <View style={{ height: 10 }} />
                             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                                 <TouchableOpacity

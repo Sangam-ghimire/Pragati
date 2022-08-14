@@ -2,141 +2,141 @@ export const DATA = [
   {
     id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
     title: "Social manners",
-    image:
-      "https://i.ytimg.com/vi/839oaaIEfQI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBW12iGueoKwI4DrsriY-bmDuvfEA",
-    video: "https://www.youtube.com/watch?v=838oaaIEfQI",
-    catagory: "child",
+    image: "https://i.ytimg.com/vi/838oaaIEfQI/maxresdefault.jpg",
+    video: "https://www.youtube.com/embed/838oaaIEfQI",
+    category: "IQ",
+    age: "2",
     author: "",
   },
   {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+    id: "3ac68afc-c605-48d4-4f8-fbd91aa97f63",
     title: "Ka kha ga gha",
     image:
       "https://i.ytimg.com/vi/4nkByGVTa_M/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAEaSOibg0iTOPtRyzO5Hmvgmimpg",
     video: "https://www.youtube.com/watch?v=4nkByGVTa_M",
-    catagory: "child",
+    category: "IQ",
+    age: "2",
     author: "",
   },
   {
-    id: "58694a0f-3da1-471f-bd96-145571e29d72",
+    id: "58694a0f3da1-471f-bd96-145571e29d72",
     title: "One two three four",
     image: "https://i.ytimg.com/vi_webp/x6D51-pz2A4/maxresdefault.webp",
     video: "https://www.youtube.com/watch?v=x6D51-pz2A4",
     child: "child",
-    author: "",
+    age: "4",
+    category: "IQ",
   },
 
   {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28bb",
+    id: "bd7acbeac1b1-46c2-aed5-3ad5abb28bb",
     title: "A for apple, b for ball",
     image:
       "https://i.ytimg.com/vi/94rmSsgKUck/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3E4NEzIjRGZHUlZ49OA0OdzJCnA",
     video: "https://www.youtube.com/watch?v=94rmSsgKUck",
+    age: "3",
+    category: "IQ",
     author: "",
   },
   {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f64",
+    id: "bd7acbe-c1b1-46c2-aed5-3ad5abb28bb",
+    title: "A for apple, b for ball",
     image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "https://i.ytimg.com/vi/94rmSsgKUck/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3E4NEzIjRGZHUlZ49OA0OdzJCnA",
+    video: "https://www.youtube.com/watch?v=94rmSsgKUck",
+    category: "Oratory",
+    age: "3",
+    author: "",
   },
   {
-    id: "58694a0f-3da1-471f-bd96-145571e29d75",
+    id: "dfdf123",
+    title: "menstural cycle",
     image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "https://i.ytimg.com/vi/ojZLUyopdzw/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBxm7z5ESRbd1FaucTd7jhZZmSvTw",
+    video: "https://youtu.be/OoBAnhVaJ1U",
+    category: "Sex education",
+    age: 10,
   },
   {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28b1",
+    id: "dff1234",
+    title: "Menstrual hygiene",
     image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "https://i.ytimg.com/vi/OoBAnhVaJ1U/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB3jNL2Ii0gWVQaxaCWsvb4SL8_Kg",
+    video: "https://youtu.be/OoBAnhVaJ1U",
+    category: "Sex education",
+    age: 10,
   },
   {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f65",
+    id: "dfdf1235",
+    title: "What is Nepal Astronomy Olympiad?",
     image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "https://i.ytimg.com/vi/5JA_mcbh3ho/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBwz7JHD3KpfThEycwBQzrdv5SVbg",
+    video: "https://www.youtube.com/watch?v=5JA_mcbh3ho",
+    category: "Olyampiad",
+    age: 10,
   },
   {
-    id: "58694a0f-3da1-471f-bd96-145571e29d70",
+    id: "dfdf129",
+    title: "Good touch bad touch",
     image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-  },
-
-  {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28bx",
-    image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "https://i.ytimg.com/vi/XDHG3dkUwN8/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYcC4UXJC2ENH6g7Y8A9ZUG_EI_w",
+    video: "https://www.youtube.com/watch?v=XDHG3dkUwN8",
+    category: "IQ",
+    age: 10,
   },
   {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f6-",
+    id: "dfdf127",
+    title: "Sex and personal education",
     image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "https://i.ytimg.com/vi/h_IgJuivQiY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDoZKZ33TD5xRaHISspKnCVMpprMQ",
+    video: "https://www.youtube.com/watch?v=h_IgJuivQiY",
+    category: "Sex education",
+    age: 10,
   },
   {
-    id: "58694a0f-3da1-471f-bd96-145571e29d7a",
+    id: "dfdf12314",
+    title: "Dashain",
     image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-  },
-
-  {
-    id: "bd7acba-c1b1-46c2-aed5-3ad53abb28ba",
-    image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "https://cdn.dribbble.com/users/2908388/screenshots/7286204/media/175b174171b8e86463070275c2d6ae3f.jpg?compress=1&resize=1000x750&vertical=top",
+    video: "https://www.youtube.com/watch?v=159rY0vi3Lk",
+    category: "History and Culture",
+    age: 10,
   },
   {
-    id: "3ac68ac-c605-48d3-a4f8-fbd91aa97f63",
+    id: "dfdf1239",
+    title: "Drawing pashupati nath temple",
     image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "https://i.ytimg.com/vi/oEgBM5beKM4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCxskyCZuJcrLH1W6IreUBVY0VkCg",
+    video: "https://www.youtube.com/watch?v=oEgBM5beKM4",
+    category: "Art and Literatures",
+    age: 10,
   },
   {
-    id: "58694af-3da1-471f-bd96-145571e29d72",
+    id: "dfdf1234",
+    title: "How to play ludo?",
     image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-  },
-
-  {
-    id: "bd7acba-c1b1-46c2-aed5-3ad53abb28bb",
-    image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "https://i.ytimg.com/vi/xYXj9DwKHr4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCXoDHq4Uj69hN6M7t7xTNfw4xwNw",
+    video: "https://www.youtube.com/watch?v=xYXj9DwKHr4",
+    category: "sports",
+    age: 10,
   },
   {
-    id: "3ac6afc-c605-48d3-a4f8-fbd91aa97f64",
+    id: "dfdf1232",
+    title: "How to solve a rubicks cube?",
     image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "https://i.ytimg.com/vi/2zErPmd6mIg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA4SiZLgD-_Jkuy5uCU7SA-KnibkA",
+    video: "https://www.youtube.com/watch?v=2zErPmd6mIg",
+    category: "sports",
+    age: 10,
   },
   {
-    id: "5864a0f-3da1-471f-bd96-145571e29d75",
+    id: "dfdf1231",
+    title: "How to write an application?",
     image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-  },
-  {
-    id: "bd7cbea-c1b1-46c2-aed5-3ad53abb28b1",
-    image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-  },
-  {
-    id: "3c68afc-c605-48d3-a4f8-fbd91aa97f65",
-    image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-  },
-  {
-    id: "5694a0f-3da1-471f-bd96-145571e29d70",
-    image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-  },
-
-  {
-    id: "b7acbea-c1b1-46c2-aed5-3ad53abb28bx",
-    image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-  },
-  {
-    id: "3ac68af-c605-48d3-a4f8-fbd91aa97f6-",
-    image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-  },
-  {
-    id: "58694a0f-3da1-41f-bd96-145571e29d7a",
-    image:
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "https://i.ytimg.com/vi/STMhXbQvU74/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAoOX_IWcFDQn2llmWhyFOQNue8XA",
+    video: "https://www.youtube.com/watch?v=STMhXbQvU74",
+    category: "IQ",
+    age: 10,
   },
 ];
 
