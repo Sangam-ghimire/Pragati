@@ -2,7 +2,6 @@ import { Image, Text, View, Dimensions, StyleSheet, TouchableOpacity } from 'rea
 import React, { useState, useRef } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { Input } from "@rneui/themed";
-import { StackActions } from '@react-navigation/native';
 
 
 const COLORS = { primary: '#282534', white: '#fff' };
@@ -43,7 +42,7 @@ function LoginScreen({ navigation }) {
                             <TouchableOpacity onPress={() => {
                                 navigation.reset({
                                     index: 0,
-                                    routes: [{ name: 'Home' }],
+                                    routes: [{ name: 'Main' }],
                                 });
                                 // navigation.navigate("Home")
                             }} style={[styles.btn, {

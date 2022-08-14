@@ -35,32 +35,32 @@ const AuthorNavigator = () => {
 }
 
 const AuthenticationNavigator = () => {
-    const isAuthenticated = true;
-    if (!isAuthenticated) {
-        return (
-            <AuthenticationStack.Navigator>
-                <AuthenticationStack.Screen options={{
-                    headerShown: false
-                }}
-                    name="Onboarding" component={Home} />
-                <AuthenticationStack.Screen options={{
-                    headerShown: false
-                }}
-                    name="Login" component={LoginScreen} />
-            </AuthenticationStack.Navigator>
-        )
-    }
     return (
-        <>
-            <Stack.Navigator initialRouteName="Main">
-                <Stack.Screen name="Main" options={{ headerShown: false }} component={DrawerNavigator} />
-                <Stack.Screen name="AuthorProfile" options={{ headerShown: false }} component={AuthorNavigator} />
-                <Stack.Screen name="Preferences" options={{ headerShown: false }} component={PreferencesScreen} />
-                <Stack.Screen name="Video" options={{ headerShown: false }} component={Card} />
-                <Stack.Screen name="CatageorySpecific" options={{ headerShown: false }} component={CategorySpecific} />
-                <Stack.Screen name="CategorieSection" options={{ headerShown: false }} component={CatagorieSection} />
-            </Stack.Navigator>
-        </>)
+        <AuthenticationStack.Navigator initialRouteName='Onboarding'>
+            <AuthenticationStack.Screen options={{
+                headerShown: false
+            }}
+                name="Onboarding" component={Home} />
+            <AuthenticationStack.Screen options={{
+                headerShown: false
+            }}
+                name="Login" component={LoginScreen} />
+        </AuthenticationStack.Navigator>
+    )
+}
+
+const StackNavigator = () => {
+    return (
+        <Stack.Navigator initialRouteName="authentication">
+            <Stack.Screen name="authentication" options={{ headerShown: false }} component={AuthenticationNavigator} />
+            <Stack.Screen name="Main" options={{ headerShown: false }} component={DrawerNavigator} />
+            <Stack.Screen name="AuthorProfile" options={{ headerShown: false }} component={AuthorNavigator} />
+            <Stack.Screen name="Preferences" options={{ headerShown: false }} component={PreferencesScreen} />
+            <Stack.Screen name="Video" options={{ headerShown: false }} component={Card} />
+            <Stack.Screen name="CatageorySpecific" options={{ headerShown: false }} component={CategorySpecific} />
+            <Stack.Screen name="CategorieSection" options={{ headerShown: false }} component={CatagorieSection} />
+        </Stack.Navigator>
+    )
 }
 
 function DrawerNavigator() {
@@ -119,7 +119,7 @@ const BottomTabNavigator = () => {
 export default function index() {
     return (
         <NavigationContainer>
-            <AuthenticationNavigator />
+            <StackNavigator />
         </NavigationContainer>
     )
 }
