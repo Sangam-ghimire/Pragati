@@ -9,38 +9,62 @@ import Header from '../components/Header';
 import AboutScreen from '../screens/AboutScreen';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import ExploreScreen from '../screens/ExploreScreen';
+import Explore from '../screens/Explore';
 import NotificationScreen from '../screens/NotificationScreen';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import ProfileScreen from '../screens/ProfileScreen';
+import AuthorProfileScreen from '../screens/AuthorProfileScreen';
+import CameraScreen from '../screens/CameraScreen';
+import PreferencesScreen from '../screens/PreferencesScreen';
+import Card from '../screens/Card';
 
 const AuthenticationStack = createNativeStackNavigator()
 const Drawer = createDrawerNavigator();
 
+const Stack = createNativeStackNavigator()
 
-const AuthenticationNavigator = () => {
+const AuthorStack = createNativeStackNavigator();
+const AuthorNavigator = () => {
     return (
-        <AuthenticationStack.Navigator>
-            <AuthenticationStack.Screen options={{
-                headerShown: false
-            }}
-                name="Onboarding" component={Home} />
-            <AuthenticationStack.Screen options={{
-                headerShown: false
-            }}
-                name="Login" component={LoginScreen} />
-            <AuthenticationStack.Screen
-                name="Home"
-                options={{
-                    headerShown: false
-                }}
-                component={DrawerNavigator} />
-        </AuthenticationStack.Navigator>
-
+        <AuthorStack.Navigator initialRouteName='AuthorProfile'>
+            <AuthorStack.Screen name="AuthorProfile" component={AuthorProfileScreen} />
+        </AuthorStack.Navigator>
     )
 }
-const DrawerNavigator = () => {
+
+const AuthenticationNavigator = () => {
+    const isAuthenticated = true;
+    if (!isAuthenticated) {
+        return (
+            <AuthenticationStack.Navigator>
+                <AuthenticationStack.Screen options={{
+                    headerShown: false
+                }}
+                    name="Onboarding" component={Home} />
+                <AuthenticationStack.Screen options={{
+                    headerShown: false
+                }}
+                    name="Login" component={LoginScreen} />
+            </AuthenticationStack.Navigator>
+        )
+    }
     return (
-        <Drawer.Navigator initialRouteName='Home'>
+        <>
+            <Stack.Navigator initialRouteName="Main">
+                <Stack.Screen name="Main" options={{ headerShown: false }} component={DrawerNavigator} />
+                <Stack.Screen name="AuthorProfile" options={{ headerShown: false }} component={AuthorNavigator} />
+                <Stack.Screen name="Preferences" options={{ headerShown: false }} component={PreferencesScreen} />
+                <Stack.Screen name="Video" options={{ headerShown: false }} component={Card} />
+                {/* <Stack.Screen name="CatageorySpecific" options={{ headerShown: false }} component={Categor} />
+                <Stack.Screen name="CatagorieSection" options={{ headerShown: false }} component={Categor} /> */}
+
+            </Stack.Navigator>
+        </>)
+}
+
+function DrawerNavigator() {
+    return (
+        <Drawer.Navigator initialRouteName="Home">
             <Drawer.Screen name="Home"
                 options={{
                     headerTitle: (props) => (<Header {...props} />), headerStyle: {
@@ -49,6 +73,9 @@ const DrawerNavigator = () => {
                 }}
                 component={BottomTabNavigator} />
             <Drawer.Screen name="About" component={AboutScreen} />
+            <Drawer.Screen name="Profile" options={{
+                headerShown: false
+            }} component={ProfileScreen} />
         </Drawer.Navigator>
     )
 }
@@ -61,7 +88,7 @@ const BottomTabNavigator = () => {
             tabBarIcon: ({ focused, color, size }) => {
                 let iconName;
 
-                if (route.name === 'Home') {
+                if (route.name === 'Feed') {
                     iconName = focused
                         ? 'ios-information-circle'
                         : 'ios-information-circle-outline';
@@ -70,6 +97,8 @@ const BottomTabNavigator = () => {
                 }
                 else if (route.name === 'Notification') {
                     iconName = focused ? 'notifications' : 'notifications-outline';
+                } else if (route.name === 'Camera') {
+                    iconName = focused ? 'camera' : 'camera-outline';
                 }
 
                 // You can return any component that you like here!
@@ -77,17 +106,14 @@ const BottomTabNavigator = () => {
             },
             tabBarActiveTintColor: 'tomato',
             tabBarInactiveTintColor: 'gray',
-        })} initialRouteName='Home' >
-            <Tab.Screen name="Home" options={{ headerShown: false }} component={HomeScreen} />
-            <Tab.Screen name="Explore" options={{ headerShown: false }} component={ExploreScreen} />
+        })} initialRouteName='Feed' >
+            <Tab.Screen name="Feed" options={{ headerShown: false }} component={HomeScreen} />
+            <Tab.Screen name="Explore" options={{ headerShown: false }} component={Explore} />
             <Tab.Screen name="Notification" options={{ headerShown: false }} component={NotificationScreen} />
+            <Tab.Screen name="Camera" options={{ headerShown: false }} component={CameraScreen} />
         </Tab.Navigator>
     );
 };
-
-
-const Stack = createNativeStackNavigator()
-
 
 export default function index() {
     return (
